@@ -4,7 +4,7 @@ pubDate: 2025-09-22T15:00:00Z
 description: "Pubblicato il volantino ufficiale dell'evento!"
 author: 'IUSS Pavia'
 image: ''
-tags: ['ReteIdee']
+tags: ['Rete Di Idee']
 ---
 
 Dal 28 al 30 settembre 2026, il Palazzo del Broletto a Pavia ospiterà la XIV Edizione di "Rete di Idee", il concorso scientifico interdisciplinare promosso dalla RIASISSU e ospitato quest'anno dalla Scuola Universitaria Superiore IUSS.
