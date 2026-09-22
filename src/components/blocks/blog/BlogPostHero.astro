@@ -38,7 +38,7 @@ const { tags, title, author, publishDate } = Astro.props
 				{
 					author ? (
 						<p class="page-header__text">
-							Scritto da, {author} {publishDate && 'il ' + publishDate}
+							Scritto da {author} {publishDate && 'il ' + publishDate}
 						</p>
 					) : (
 						publishDate && <p class="page-header__text">Pubblicato il, {publishDate}</p>
