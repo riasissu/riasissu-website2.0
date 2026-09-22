@@ -45,6 +45,11 @@ const processData = giunteData.map((item) => {
 				: ''
 		}
 		${
+			item.brochure
+				? `<li><strong>Brochure dell'evento:</strong> <a href="${item.brochure}" target="_blank">Brochure ${item.year}</a></li>`
+				: ''
+		}
+		${
 			item.website
 				? `<li><strong>Sito dell'evento:</strong> <a href="${item.website}" target="_blank">${item.website}</a></li>`
 				: ''
