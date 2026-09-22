@@ -1,5 +1,12 @@
 [
     {
+        "year": 2026,
+        "school" : "Istituto Universitario di Studi Superiori",
+        "place" : "Pavia",
+        "website" : "",
+        "report" : ""
+    },
+    {
         "year": 2025,
         "school" : "Scuola Superiore di Catania",
         "place" : "Catania",
