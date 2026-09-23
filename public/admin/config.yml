@@ -1,0 +1,31 @@
+# --- Backend: dove e come Sveltia CMS committa le modifiche ---
+backend:
+  name: github
+  repo: riasissu/riasissu-website2.0                 # es. alessandro/mio-sito -- SOSTITUISCI
+  branch: main                     # il branch da cui parte il deploy
+  base_url: https://sveltia-cms-auth.pagamenti.workers.dev   # URL del Worker OAuth (step 3-4) -- SOSTITUISCI
+
+# --- Dove finiscono le immagini caricate dall'editor ---
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+# --- Le collection: qui è definito cosa può modificare chi scrive i post ---
+collections:
+  - name: "posts"
+    label: "Articoli del blog"
+    label_singular: "Articolo"
+    folder: "src/content/news"     # PERCORSO REALE dei tuoi file markdown -- SOSTITUISCI se diverso
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data di pubblicazione", name: "pubDate", widget: "datetime" }
+      - { label: "Descrizione", name: "description", widget: "text", required: false }
+      - { label: "Autore", name: "author", widget: "string"}
+      - { label: "Bozza (non pubblicare)", name: "draft", widget: "boolean", default: true }
+      - { label: "Tag", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" }, required: false }
+      - { label: "Immagine principale", name: "image", widget: "image", media_folder: "../../../public/images/uploads", public_folder: "/images/uploads", required: false } 
+      - { label: "Contenuto", name: "body", widget: "markdown" }
+      # Aggiungi/rimuovi campi in base al front-matter reale dei tuoi post
+      # (tag, immagine di copertina, autore, ecc.)
