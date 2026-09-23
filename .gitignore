@@ -31,3 +31,4 @@ pnpm-debug.log*
 
 CLAUDE.md
 REFACTOR_PLAN.md
+public/admin/secrets.txt

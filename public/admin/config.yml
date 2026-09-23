@@ -9,6 +9,8 @@ backend:
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
+logo: { src: "public/2riasissu.svg" }
+
 # --- Le collection: qui è definito cosa può modificare chi scrive i post ---
 collections:
   - name: "posts"
