@@ -29,7 +29,7 @@ collections:
       - { label: "Data di pubblicazione", name: "pubDate", widget: "datetime" }
       - { label: "Descrizione", name: "description", widget: "text", required: false }
       - { label: "Autore", name: "author", widget: "string"}
-      - { label: "Bozza (non pubblicare)", name: "draft", widget: "boolean", default: true }
+      #- { label: "Bozza (non pubblicare)", name: "draft", widget: "boolean", default: true }
       - { label: "Tag", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" }, required: false }
       - { label: "Immagine principale", name: "image", widget: "image", media_folder: "../../../public/images/uploads", public_folder: "/images/uploads", required: false } 
       - { label: "Contenuto", name: "body", widget: "markdown" }
