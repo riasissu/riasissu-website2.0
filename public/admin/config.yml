@@ -1,10 +1,14 @@
 # --- Backend: dove e come Sveltia CMS committa le modifiche ---
+
+publish_mode: editorial_workflow
+
 backend:
   name: github
   repo: riasissu/riasissu-website2.0                 # es. alessandro/mio-sito -- SOSTITUISCI
   branch: main                     # il branch da cui parte il deploy
   base_url: https://riasissu-cms-auth.riasissu.workers.dev   # URL del Worker OAuth (step 3-4) -- SOSTITUISCI
   auth_methods: [oauth]
+  squash_merges: true
 # --- Dove finiscono le immagini caricate dall'editor ---
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
