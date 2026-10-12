@@ -9,5 +9,18 @@
   <body>
     <!-- Carica Sveltia CMS dal CDN: nessuna build o dipendenza da aggiungere al progetto Astro -->
     <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+    <script>
+      const relabel = () => {
+        for (const el of document.querySelectorAll('button, button *')) {
+          if (el.childElementCount === 0 && /GitHub/.test(el.textContent)) {
+            el.textContent = 'Accedi con l’account RIASISSU';
+          }
+        }
+      };
+      new MutationObserver(relabel).observe(document.documentElement, {
+        childList: true,
+        subtree: true,
+      });
+</script>
   </body>
 </html>
