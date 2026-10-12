@@ -63,5 +63,6 @@ export const navigationBarData: NavData = {
 		{ name: '5x1000', link: '/5x1000' },
 		{ name: 'Contatti', link: '/contatti' }
 	],
-	navActions: [{ name: 'Area Riservata', link: 'https://riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE', target: '_blank', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Area Riservata', link: 'drive.google.com/drive/folders/0AEaeWYWmDRbWUk9PVA', target: '_blank', style: 'primary', size: 'lg' }]
 }
+//https://riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE
