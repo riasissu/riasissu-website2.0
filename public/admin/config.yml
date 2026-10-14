@@ -10,8 +10,8 @@ backend:
   auth_methods: [oauth]
   #squash_merges: true
 # --- Dove finiscono le immagini caricate dall'editor ---
-media_folder: "../uploads"
-public_folder: "/public/news"
+media_folder: "/uploads"
+public_folder: "/news"
 
 logo: { src: "/2riasissu.svg" }
 
