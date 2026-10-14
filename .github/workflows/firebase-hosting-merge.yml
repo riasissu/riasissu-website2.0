@@ -25,7 +25,7 @@ jobs:
           path: news
 
       # Solo se oggi le immagini degli articoli stanno in public/ con percorsi assoluti:
-      - run: mkdir -p public/news && mv -r news/uploads/. public/news
+      - run: mkdir -p public/news && mv news/uploads/. public/news
 
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
