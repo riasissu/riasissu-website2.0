@@ -4,14 +4,14 @@
 
 backend:
   name: github
-  repo: riasissu/riasissu-website2.0                 # es. alessandro/mio-sito -- SOSTITUISCI
+  repo: riasissu/riasissu-news               # es. alessandro/mio-sito -- SOSTITUISCI
   branch: main                     # il branch da cui parte il deploy
   base_url: https://riasissu-cms-auth.riasissu.workers.dev   # URL del Worker OAuth (step 3-4) -- SOSTITUISCI
   auth_methods: [oauth]
   #squash_merges: true
 # --- Dove finiscono le immagini caricate dall'editor ---
-media_folder: "public/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "../uploads"
+public_folder: "../uploads"
 
 logo: { src: "/2riasissu.svg" }
 
@@ -20,7 +20,7 @@ collections:
   - name: "posts"
     label: "Articoli del blog"
     label_singular: "Articolo"
-    folder: "src/content/news"     # PERCORSO REALE dei tuoi file markdown -- SOSTITUISCI se diverso
+    folder: "posts"     # PERCORSO REALE dei tuoi file markdown -- SOSTITUISCI se diverso
     create: true
     delete: true
     slug: "{{slug}}"
