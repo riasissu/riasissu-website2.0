@@ -13,6 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Scarica gli articoli dal repo delle news nella cartella news/
+      - uses: actions/checkout@v4
+        with:
+          repository: riasissu/riasissu-news
+          path: news
+
+      # Solo se oggi le immagini degli articoli stanno in public/ con percorsi assoluti:
+      - run: mkdir -p public/news && cp -r news/uploads/. public/news
+
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
