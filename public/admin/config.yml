@@ -11,7 +11,7 @@ backend:
   #squash_merges: true
 # --- Dove finiscono le immagini caricate dall'editor ---
 media_folder: "../uploads"
-public_folder: "../uploads"
+public_folder: "/public/news"
 
 logo: { src: "/2riasissu.svg" }
 
